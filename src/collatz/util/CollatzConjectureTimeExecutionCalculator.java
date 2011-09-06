@@ -10,7 +10,7 @@ public class CollatzConjectureTimeExecutionCalculator {
 		this.numberOfThreads = numberOfThreads;
 	}
 	
-	public long calculateExecutionTime(int from, int to) throws InterruptedException{
+	public long calculateExecutionTime(long from, long to) throws InterruptedException{
 		
 		long initExecutionTime = System.nanoTime();
 		List<Thread> collatzConjectureCheckers = createThreads(from, to);
@@ -38,7 +38,7 @@ public class CollatzConjectureTimeExecutionCalculator {
 		}
 	}
 
-	private List<Thread> createThreads(int from, int to) {
+	private List<Thread> createThreads(long from, long to) {
 		List<Thread> collatzConjectureCheckers = new ArrayList<Thread>();
 		
 		for (int i = 0; i < numberOfThreads; i++) {

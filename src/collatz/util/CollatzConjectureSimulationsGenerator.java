@@ -27,7 +27,7 @@ public class CollatzConjectureSimulationsGenerator {
 	
 	public List<Pair> calculateAverages() throws InterruptedException {
 		
-		int begin = beginValue;
+		long begin = beginValue;
 		
 		List<Pair> pairs = new ArrayList<Pair>();
 		
@@ -41,13 +41,12 @@ public class CollatzConjectureSimulationsGenerator {
 			long average = sum/numberOfSimulations;
 			Pair pair = new Pair(begin, average);
 			pairs.add(pair);
-			
 			begin = incrementCounter(begin);
 		}
 		return pairs;
 	}
 
-	private int incrementCounter(int begin) {
+	private long incrementCounter(long begin) {
 		return begin * GROWTH_RATE;
 	}
 }
