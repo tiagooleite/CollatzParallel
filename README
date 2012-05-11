@@ -5,7 +5,7 @@ If you want just run this project, download the .jar located in the target file 
     {number of repetitions}
     {maximum serie size}
 
-Example:
+Example  :
 In the console, do it:
 
     java -jar collatzparallel.jar 2 500 10000
