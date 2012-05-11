@@ -1,5 +1,8 @@
 Project of the discipline fundamentals of concurrent programming
 
+
+
+
 If you want just run this project, download the .jar located in the target file and rum with this parameters: 
     {number of threads}
     {number of repetitions}
